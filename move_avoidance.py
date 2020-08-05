@@ -30,7 +30,7 @@ class GoForwardAvoid():
            # We made it!
            state = self.move_base.get_state()
            if state == GoalStatus.SUCCEEDED:
-              rospy.loginfo(“The base moved 3 meters forward")
+              rospy.loginfo("The base moved 3 meters forward")
               
     def shutdown(self):
         stop_goal = MoveBaseGoal()
