@@ -24,12 +24,12 @@
  </link>
         <joint name="base_to_link_2" type="revolute">
         <parent link="base_link"/>
-        <child link=“link_2"/>
-	 <origin xyz=“0.6 0.0 0.0” rpy=“0.0 0.0 0.0”/>
+        <child link="link_2"/>
+	 <origin xyz="0.6 0.0 0.0" rpy="0.0 0.0 0.0"/>
  </joint>
-        <joint name="link_2_to_camera" type=“fixed">
-        <parent link=" link_2 "/>
+        <joint name="link_2_to_camera" type="fixed">
+        <parent link="link_2"/>
         <child link="camera_link "/>
-        <origin xyz=“0.6 0.0 0.0” rpy=“0.0 0.0 0.0”/>
+        <origin xyz="0.6 0.0 0.0" rpy="0.0 0.0 0.0"/>
  </joint>
 </robot>
