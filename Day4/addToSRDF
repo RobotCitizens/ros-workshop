@@ -1,0 +1,14 @@
+    <group_state name="ready_to_pick" group="arm">
+        <joint name="crane_plus_elbow_joint" value="1.6176" />
+        <joint name="crane_plus_gripper_joint" value="0" />
+        <joint name="crane_plus_shoulder_flex_joint" value="-0.0747" />
+        <joint name="crane_plus_shoulder_revolute_joint" value="-0.951" />
+        <joint name="crane_plus_wrist_joint" value="1.4198" />
+    </group_state>
+    <group_state name="ready_to_place" group="arm">
+        <joint name="crane_plus_elbow_joint" value="1.6176" />
+        <joint name="crane_plus_gripper_joint" value="0" />
+        <joint name="crane_plus_shoulder_flex_joint" value="-0.0747" />
+        <joint name="crane_plus_shoulder_revolute_joint" value="1.01243" />
+        <joint name="crane_plus_wrist_joint" value="1.4198" />
+    </group_state>
