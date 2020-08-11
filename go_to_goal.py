@@ -26,7 +26,7 @@ class GoToGoal():
         orientation_q = odom_data.pose.pose.orientation # orientation data
         orientation_list = [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w]         
 	    # change orientation data to radius
-	    (roll, pitch, yaw) = euler_from_quaternion(orientation_list) 
+	(roll, pitch, yaw) = euler_from_quaternion(orientation_list) 
         self.current_theta = yaw # currently radius of robot
 
     def go_to_goal(self, vel_x):
