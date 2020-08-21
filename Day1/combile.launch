@@ -1,0 +1,15 @@
+<launch>
+        <arg name="hello" value="True" />
+        <group If="$(arg hello)">
+                 <include file="$(find my_package)/launch/dynamics_talker.launch" />
+                 <include file="$(find my_package)/launch/listener.launch"/>
+	    <param name="talker_str" type="str" value="hello"/>
+         </group>
+
+         <group  unless ="$(arg hello)">
+                 <include file="$(find my_package)/launch/dynamics_talker.launch" />
+                 <include file="$(find my_package)/launch/listener.launch"/>
+	    <param name="talker_str" type="str" value="goodbye" />
+         </group>
+
+</launch>
