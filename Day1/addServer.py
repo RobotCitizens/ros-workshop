@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from my_package.srv import AddTwoInts,AddTwoIntsResponse
 import rospy
 
